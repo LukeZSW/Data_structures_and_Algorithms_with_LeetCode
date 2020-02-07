@@ -47,3 +47,13 @@ Problems|Solutions
 ---|---
 [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)|[Implement_Queue_using_Stacks.py](./Implement_Queue_using_Stacks.py)
 [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)|[Implement_Stack_using_Queues.py](./Implement_Stack_using_Queues.py)
+
+
+<style>
+table th:first-of-type {
+    width: 50%;
+}
+table th:nth-of-type(2) {
+    width: 50%;
+}
+</style>
