@@ -1,0 +1,4 @@
+# Trie
+
+Problems|Solutions
+---|---
