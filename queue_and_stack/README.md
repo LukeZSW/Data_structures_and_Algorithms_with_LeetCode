@@ -18,6 +18,7 @@ Problems|Solutions
 [752. Open the Lock](https://leetcode.com/problems/open-the-lock/)|[Open_the_Lock.py](./Open_the_Lock.py)
 [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)|[Perfect_Squares.py](./Perfect_Squares.py)
 [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)|[01_Matrix.py](./01_Matrix.py)
+[773. Sliding Puzzle](https://leetcode.com/problems/sliding-puzzle/)|[Sliding_Puzzle.py](./Sliding_Puzzle.py)
 
 ## Stack (LIFO)
 In a LIFO data structure, the newest element added to the queue will be processed first.

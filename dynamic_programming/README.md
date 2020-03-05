@@ -5,7 +5,6 @@
 ### easy
 Problems|Solutions
 ---|---
-[200. Number of Islands](https://leetcode.com/problems/number-of-islands/)|[Number_of_Islands.py](./Number_of_Islands.py)
 
 ### medium
 Problems|Solutions
