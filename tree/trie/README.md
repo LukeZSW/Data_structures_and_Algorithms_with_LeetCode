@@ -52,3 +52,5 @@ Problems|Solutions
 [212. Word Search II](https://leetcode.com/problems/word-search-ii/)|[word_search_ii.py](./word_search_ii.py)
 [336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/)|[palindrome_pairs.py](./palindrome_pairs.py)
 
+## Reference
+1. https://leetcode.com/explore/learn/card/trie/

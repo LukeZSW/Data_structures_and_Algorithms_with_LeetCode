@@ -19,3 +19,7 @@ Trie: [link](./tree/trie)
 ## Algorithms
 
 DP: [link](./dynamic_programming)
+
+## Other
+
+Math: [link](./math)
