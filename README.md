@@ -18,6 +18,8 @@ Trie: [link](./tree/trie)
 
 ## Algorithms
 
+Sorting: [link](./sorting)
+
 DP: [link](./dynamic_programming)
 
 ## Other

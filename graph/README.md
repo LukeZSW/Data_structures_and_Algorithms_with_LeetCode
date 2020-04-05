@@ -14,29 +14,6 @@ Breadth-first search is one of the simplest algorithms for searching a graph and
 for many important graph algorithms. Prim’s minimum-spanning tree algorithm and Dijkstra’s 
 single-source shortest-paths algorithm use ideas similar to those in breadth-first search.
 
-Given a graph G = (V, E) and a distinguished source vertex s, breadth-first
-search systematically explores the edges of G to “discover” every vertex that is
-reachable from s. It computes the distance (smallest number of edges) from s
-to each reachable vertex. It also produces a “breadth-first tree” with root s that
-contains all reachable vertices. For any vertex v reachable from s, the simple path
-in the breadth-first tree from s to v corresponds to a “shortest path” from s to v
-in G, that is, a path containing the smallest number of edges. The algorithm works
-on both directed and undirected graphs.
-
-Breadth-first search is so named because it expands the frontier between discovered 
-and undiscovered vertices uniformly across the breadth of the frontier. That
-is, the algorithm discovers all vertices at distance k from s before discovering any
-vertices at distance k + 1.
-
-To keep track of progress, breadth-first search colors each vertex white, gray, or
-black. All vertices start out white and may later become gray and then black. A
-vertex is discovered the first time it is encountered during the search, at which time
-it becomes nonwhite. Gray and black vertices, therefore, have been discovered, but
-breadth-first search distinguishes between them to ensure that the search proceeds
-in a breadth-first manner. If (u, v) ∈ E and vertex u is black, then vertex v
-is either gray or black; that is, all vertices adjacent to black vertices have been
-discovered. Gray vertices may have some adjacent white vertices; they represent
-the frontier between discovered and undiscovered vertices.
 
 ```
 BFS(G, s)
@@ -66,34 +43,13 @@ Time complexity: O(V + E)
  
 The strategy followed by depth-first search is, as its name implies, to search
 “deeper” in the graph whenever possible. Depth-first search explores edges out
-of the most recently discovered vertex  that still has unexplored edges leaving it.
+of the most recently discovered vertex v that still has unexplored edges leaving it.
 Once all of v’s edges have been explored, the search “backtracks” to explore edges
 leaving the vertex from which v was discovered. This process continues until we
 have discovered all the vertices that are reachable from the original source vertex.
 If any undiscovered vertices remain, then depth-first search selects one of them as
 a new source, and it repeats the search from that source. The algorithm repeats this
 entire process until it has discovered every vertex.
-
-As in breadth-first search, whenever depth-first search discovers a vertex v during a 
-scan of the adjacency list of an already discovered vertex u, it records this
-event by setting v’s predecessor attribute v.π to u. Unlike breadth-first search,
-whose predecessor subgraph forms a tree, the predecessor subgraph produced by
-a depth-first search may be composed of several trees, because the search may
-repeat from multiple sources. The predecessor subgraph of a depth-first search forms a 
-depth-first forest comprising several depth-first trees.
-
-As in breadth-first search, depth-first search colors vertices during the search to
-indicate their state. Each vertex is initially white, is grayed when it is discovered
-in the search, and is blackened when it is finished, that is, when its adjacency list
-has been examined completely. This technique guarantees that each vertex ends up
-in exactly one depth-first tree, so that these trees are disjoint.
-
-Besides creating a depth-first forest, depth-first search also timestamps each vertex.
-Each vertex v has two timestamps: the first timestamp v.d records when v
-is first discovered (and grayed), and the second timestamp v.f records when the
-search finishes examining v’s adjacency list (and blackens v). These timestamps provide
- important information about the structure of the graph and are generally
-helpful in reasoning about the behavior of depth-first search.
 
 ```
 DFS(G)
